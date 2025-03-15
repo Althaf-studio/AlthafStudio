@@ -1,0 +1,23 @@
+.list li {
+  background: rgb(244, 133, 53);
+}
+
+.image {
+  width: 1060px;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.image:hover {
+  transform: scale(1.01);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-width: 600px) {
+  .image {
+    width: 100%;
+    height: auto;
+  }
+}
